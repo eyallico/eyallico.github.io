@@ -2,6 +2,5 @@
 body	{ background:url(../images/backgroundMoon.jpg) top right no-repeat; background-attachment:fixed; }
 
 cards {
-    margin:10%;
-
+    margin-top:20%;
 }
