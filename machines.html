@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <title>Reserva de Máquinas</title>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="css/tecsup.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body class="indigo lighten-4">
+
+<nav>
+  <ul class="right hide-on-med-and-down indigo">
+   <li><a href="index.html">Inicio</a></li>
+   <li><a href="machines.html">Reserva de máquinas</a></li>
+   <li><a href="inventory.html">Inventario</a></li>
+ </ul>
+ <div class="nav-wrapper indigo valign-wrapper">
+   <ul id="nav-mobile" class="left hide-on-med-and-down">
+    <li><img class="valign"src="img/logo.png" alt="logo" height="50"></li>
+  </ul>
+</div>
+</nav>
+
+<div class="row">
+  <div class="col s8 m8 push-m2">
+    <h2>Bienvenido</h2>
+    <p>Aquí podrás observar el estado de tu reserva de máquina. Recuerda que actualizamos el sistema todos los lunes y miércoles a las 6:00 PM. Si deseas reservar alguna máquina envía un correo a eduardo.yallico@tecsup.edu.pe con los siguientes datos:</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s6 m6 push-m3">
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header indigo white-text"><i class="material-icons">info_outline</i>Datos requeridos</div>
+        <div class="collapsible-body indigo lighten-5">
+          <p>Nombre completo <br>
+            Carrera <br>
+            Ciclo <br>
+            Máquina que desea reservar <br>
+            Proyecto <br>
+            Profesor de referencia o encargado del proyecto <br>
+            Archivo del trabajo a realizar, en el formato especificado
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header indigo white-text"><i class="material-icons">settings</i>Especificación de formatos según máquina</div>
+        <div class="collapsible-body  indigo lighten-5">
+          <p>
+            Fresadora CNC: Archivos en formato .dxf (versión 2004 o anterior). <br><br>
+            Cortadora láser: Archivos en formato .cdr o .dxf (versión 2004 o anterior). <br><br>
+            Impresora 3D: Archivos en formato .stl.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s8 m8 push-m2">
+    <p>En caso de que la reserva sea aprobada, aparecerá registrado en el horario de uso de la máquina. Si hay alguna corrección que realizar en los archivos, será señalada en el correo de confirmación, por favor, corrija la observación antes de acercarse al laboratorio a realizar el trabajo. Muchas gracias por adelantado.</p>
+  </div>
+</div>
+
+
+<div class="row indigo">
+  <div class="col s4 m4">
+    <a class="modal-trigger black-text" href="#modal1">
+      <div class="card medium">
+        <div class="card-image">
+          <img src="img/machines/makerbot.jpg">
+        </div>
+        <div class="card-content">
+          <p><b>Impresión 3D</b></p>
+          <p><b>Área de trabajo máxima:</b></p>
+          <p>20cm x 15cm x 15cm</p>
+          <p><b>Materiales:</b></p>
+          <p>ABS, PLA</p>
+        </div>
+
+      </div>
+    </a>
+  </div>
+
+  <div class="col s4 m4">
+    <a class="modal-trigger black-text" href="#modal2">
+      <div class="card medium">
+        <div class="card-image">
+          <img src="img/machines/epilog.jpg">
+        </div>
+        <div class="card-content">
+          <p><b>Corte láser</b></p>
+          <p><b>Área de trabajo máxima:</b></p>
+          <p>90cm x 60cm</p>
+          <p><b>Materiales:</b></p>
+          <p>Acrílico, MDF, triplay</p>
+        </div>
+
+      </div>
+    </a>
+  </div>
+
+  <div class="col s4 m4">
+    <a class="modal-trigger black-text" href="#modal3">
+      <div class="card medium">
+        <div class="card-image">
+          <img src="img/machines/shopbot.jpg">
+        </div>
+        <div class="card-content">
+          <p><b>Fresadora CNC</b></p>
+          <p><b>Área de trabajo máxima:</b></p>
+          <p>120cm x 240cm</p>
+          <p><b>Materiales:</b></p>
+          <p>MDF, Triplay</p>
+        </div>
+
+      </div>
+    </div>
+  </a>
+</div>
+
+<div id="modal1" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <table id="makerbotTable">
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+
+    </table>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+  </div>
+</div>
+
+<div id="modal2" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <table id="epilogTable">
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+
+    </table>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+  </div>
+</div>
+
+<div id="modal3" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <table id="shopbotTable">
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+
+    </table>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+  </div>
+</div>
+
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
+</script>
+<script>
+
+  $.ajax({
+    url: 'datos/hShopbot.json',
+    type: "GET",
+    dataType: "json",
+    complete: function (data, textStatus, jqXHR) {
+    var file = JSON.parse(data.responseText);
+    drawTableS(file.horario);
+},
+});
+
+  $.ajax({
+    url: 'datos/hEpilog.json',
+    type: "GET",
+    dataType: "json",
+    complete: function (data, textStatus, jqXHR) {
+    var file = JSON.parse(data.responseText);
+    drawTableE(file.horario);
+},
+});
+
+  $.ajax({
+    url: 'datos/hMakerbot.json',
+    type: "GET",
+    dataType: "json",
+    complete: function (data, textStatus, jqXHR) {
+    var file = JSON.parse(data.responseText);
+    drawTableM(file.horario);
+},
+});
+ 
+
+function drawTableM(data) {
+    for (var i = 0; i < data.length; i++) {
+        drawRowM(data[i]);
+    }
+}
+function drawTableS(data) {
+    for (var i = 0; i < data.length; i++) {
+        drawRowS(data[i]);
+    }
+}
+function drawTableE(data) {
+    for (var i = 0; i < data.length; i++) {
+        drawRowE(data[i]);
+    }
+}
+
+function drawRowE(rowData) {
+    var row = $("<tr />")
+    $("#epilogTable").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    row.append($("<td>" + rowData.hora + "</td>"));
+    row.append($("<td>" + rowData.lunes + "</td>"));
+    row.append($("<td>" + rowData.martes + "</td>"));
+    row.append($("<td>" + rowData.miercoles + "</td>"));
+    row.append($("<td>" + rowData.jueves + "</td>"));
+    row.append($("<td>" + rowData.viernes + "</td>"));
+
+}
+function drawRowS(rowData) {
+    var row = $("<tr />")
+    $("#shopbotTable").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    row.append($("<td>" + rowData.hora + "</td>"));
+    row.append($("<td>" + rowData.lunes + "</td>"));
+    row.append($("<td>" + rowData.martes + "</td>"));
+    row.append($("<td>" + rowData.miercoles + "</td>"));
+    row.append($("<td>" + rowData.jueves + "</td>"));
+    row.append($("<td>" + rowData.viernes + "</td>"));
+
+}
+function drawRowM(rowData) {
+    var row = $("<tr />")
+    $("#makerbotTable").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    row.append($("<td>" + rowData.hora + "</td>"));
+    row.append($("<td>" + rowData.lunes + "</td>"));
+    row.append($("<td>" + rowData.martes + "</td>"));
+    row.append($("<td>" + rowData.miercoles + "</td>"));
+    row.append($("<td>" + rowData.jueves + "</td>"));
+    row.append($("<td>" + rowData.viernes + "</td>"));
+
+}
+
+</script>
+
+
+</body>
+</html>

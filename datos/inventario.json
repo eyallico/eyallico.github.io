@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "nombre": "ABS White",
+      "tipo": "consumible",
+      "proceso": "3dprint",
+      "cantidad": 5,
+      "ubicacion": "1A",
+      "sububicacion": null,
+      "descripcion": "ABS blanco 3mm",
+      "tags": [
+        "abs",
+        "filamento",
+        "blanco",
+        "impresion"
+      ]
+    },
+    {
+      "nombre": "ABS Black",
+      "tipo": "consumible",
+      "proceso": "3dprint",
+      "cantidad": 2,
+      "ubicacion": "1A",
+      "sububicacion": null,
+      "descripcion": "ABS negro 3mm",
+      "tags": [
+        "abs",
+        "filamento",
+        "negro",
+        "impresion"
+      ]
+    },
+    {
+      "nombre": "ABS Green",
+      "tipo": "consumible",
+      "proceso": "3dprint",
+      "cantidad": 1,
+      "ubicacion": "1A",
+      "sububicacion": null,
+      "descripcion": "ABS verde 3mm",
+      "tags": [
+        "abs",
+        "filamento",
+        "verde",
+        "impresion"
+      ]
+    },
+    {
+      "nombre": "ABS Yellow",
+      "tipo": "consumible",
+      "proceso": "3dprint",
+      "cantidad": 1,
+      "ubicacion": "1A",
+      "sububicacion": null,
+      "descripcion": "ABS amarillo 3mm",
+      "tags": [
+        "abs",
+        "filamento",
+        "amarillo",
+        "impresion"
+      ]
+    }
+  ]
+}

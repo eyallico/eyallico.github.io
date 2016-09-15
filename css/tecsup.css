@@ -1,0 +1,14 @@
+.fondo {
+	background-image: url("../img/fondo3.png");
+	background-size: cover;
+	background-repeat: no-repeat;    
+}
+.imagenP{
+	 background-color: rgba(0, 0, 0, 0.9);
+	display: inline-block;
+	margin-top:12%;
+	margin-left:5%;
+	padding:20px;
+	border-radius: 5px;
+	
+}
